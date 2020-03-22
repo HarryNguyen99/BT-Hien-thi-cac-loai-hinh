@@ -9,10 +9,10 @@ public class HienThiCacLoaiHinh {
         System.out.println("0. Exit");
         System.out.print("Chọn hình muỗn vẽ: ");
 
-        Scanner sc = new Scanner(System.in);
-        int choice = sc.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
 
-        if (choice == 1) {
+        if (num == 1) {
             for (int i = 0; i < 3; i++) {
                 System.out.println();
                 for (int j = 0; j <= 6; j++) {
@@ -21,7 +21,7 @@ public class HienThiCacLoaiHinh {
             }
         }
 
-        if (choice == 2) {
+        if (num == 2) {
             for (int i = 1; i <= 6; i++) {
                 System.out.println();
                 for (int j = 0; j < i; j++) {
@@ -65,7 +65,7 @@ public class HienThiCacLoaiHinh {
             }
         }
 
-        if (choice == 3) {
+        if (num == 3) {
             for (int i = 1; i < 6; i++) {
                 for (int j = 6; j > i; j--) {
                     System.out.print(" ");
@@ -78,7 +78,7 @@ public class HienThiCacLoaiHinh {
 
         }
 
-        if (choice == 0) {
+        if (num == 0) {
             System.out.println("Tạm Biệt");
         }
     }
